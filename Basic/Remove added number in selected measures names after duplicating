@@ -1,0 +1,14 @@
+//
+//  Title: Remove added number in selected measures names after duplicating 
+//  
+//  Author: Artur Nawrocki
+//  
+//  This script, when executed, will loop through the currently selected measures
+//  and remove added number like " 1" or " 2".
+// 
+
+
+    foreach (var m in Selected.Measures)
+        {
+            m.Name = m.Name.Remove(m.Name.Length-2);
+        }
