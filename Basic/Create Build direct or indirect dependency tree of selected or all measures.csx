@@ -11,7 +11,7 @@
  *
  */
 
-string tsv = "Measure\tDependsOnMeasure"; // TSV file header row
+string tsv = "Measure\tDependsOnMeasure"; // TSV file header row - "\t" is used as tabulator/separator between column headers of created file
 
 // Loop through all measures: (Change to Model.AllMeasures to Selected.Measures if only want Loop through selected measures)
 foreach(var m in Model.AllMeasures /**/) {
